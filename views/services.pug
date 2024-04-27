@@ -1,0 +1,60 @@
+extends base.pug
+
+block scripts
+    script(src="/static/service.js")
+
+block style
+    style
+        include ../static/style.css
+        include ../static/styleAbout.css
+
+block content
+    div.container
+        h1 Welcome to Our Dance Academy Services
+        p We offer a variety of dance classes for all levels and ages. Our experienced instructors are passionate about teaching and sharing their love of dance with students.
+        h2 Classes Offered
+        ul
+            li Ballet
+            li Hip Hop
+            li Contemporary
+            li Jazz
+            li Tap
+            li Modern
+        h2 Schedule
+        p Please see our schedule below for class times and days.
+        table
+            thead
+                tr
+                    th Day
+                    th Class
+                    th Time
+            tbody
+                tr
+                    td Monday
+                    td Ballet
+                    td 10:00 - 11:30
+                tr
+                    td Tuesday
+                    td Hip Hop
+                    td 16:00 - 17:30
+                tr
+                    td Wednesday
+                    td Contemporary
+                    td 18:00 - 19:30
+                tr
+                    td Thursday
+                    td Jazz
+                    td 14:00 - 15:30
+                tr
+                    td Friday
+                    td Tap
+                    td 12:00 - 13:30
+                tr
+                    td Saturday
+                    td Modern
+                    td 10:00 - 11:30
+        h2 Pricing
+        p Please contact us for pricing information.
+        h2 Contact Us
+        p We would love to hear from you! Please contact us with any questions or to sign up for a class.
+        a(href="/contact") Contact Us

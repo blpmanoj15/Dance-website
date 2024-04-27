@@ -1,0 +1,41 @@
+extends base.pug
+block scripts 
+    script(src="/static/index.js")
+block style 
+    style 
+        include ../static/style.css
+        include ../static/styleAbout.css
+block content
+    div.container
+        h1 ClassInfo 
+        table
+            thead
+            tr
+                th Day
+                th Class
+                th Time
+            tbody
+            tr
+                td Monday
+                td Ballet
+                td 10:00 - 11:30
+            tr
+                td Tuesday
+                td Hip Hop
+                td 16:00 - 17:30
+            tr
+                td Wednesday
+                td Contemporary
+                td 18:00 - 19:30
+            tr
+                td Thursday
+                td Jazz
+                td 14:00 - 15:30
+            tr
+                td Friday
+                td Tap
+                td 12:00 - 13:30
+            tr
+                td Saturday
+                td Modern
+                td 10:00 - 11:30
